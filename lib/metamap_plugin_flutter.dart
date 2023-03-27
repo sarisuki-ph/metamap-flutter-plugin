@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class MetaMapFlutter {
-  static late final Completer<Result> resultCompleter;
+  static Completer<Result> resultCompleter = Completer<Result>();
 
   static const MethodChannel _channel = const MethodChannel('mati_flutter');
 
